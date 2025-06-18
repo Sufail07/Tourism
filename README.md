@@ -30,7 +30,7 @@ This app can be used to maintain a personal travel log, power a small-scale tour
 - 🅱️ Bootstrap 5
 
 ### Database
-- 🛢️ SQLite (can be replaced with PostgreSQL, MySQL, etc.)
+- 🛢️ MySQL (Server set-up using XAMPP)
 
 ### Media
 - 🖼️ Image upload using Django `MEDIA` configuration
