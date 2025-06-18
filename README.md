@@ -59,6 +59,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+### 4. Set Up Database
+
+- Create a MySQL server at port 3307 and adjust settings.py as required.
+
 ### 4. Apply Migrations
 
 ```bash
