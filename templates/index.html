@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">Tourist Destinations</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% if data %}
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {% for destination in data %}
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ destination.name }}</h5>
+                            {% comment %} <p class="card-text">
+                                <strong>Weather:</strong> {{ destination.weather }}<br>
+                                <strong>Location:</strong> {{ destination.location }}<br>
+                                <strong>Description:</strong> {{ destination.description }}
+                            </p> {% endcomment %}
+                        </div>
+                        {% if destination.google_map_link %}
+                        <div class="card-footer text-center">
+                            <a href="{% url 'view-destination' destination.id %}" class="btn btn-outline-success btn-sm">View</a>
+                            <a href="{{ destination.google_map_link }}" target="_blank" class="btn btn-outline-primary btn-sm">View on Map</a>
+                            <a href="{% url 'destination-update' destination.id %}" class="btn btn-outline-success btn-sm">Edit</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No destinations found.</p>
+    {% endif %}
+</div>
+{% endblock %}
