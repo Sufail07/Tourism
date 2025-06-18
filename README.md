@@ -138,5 +138,3 @@ Contributions are welcome!
 
 
 Made with ❤️ by [@Sufail07](https://github.com/Sufail07)
-
-```
