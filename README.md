@@ -1,7 +1,7 @@
 
 # 🌍 Tourism Web App
 
-**Tourism** is a full-stack travel application built with **Django**, **Django REST Framework (DRF)**, and a Bootstrap-based frontend. It allows users to **create, view, update, and delete travel destinations**, upload images, and add map links to each location.
+This is a full-stack travel application built with **Django**, **Django REST Framework (DRF)**, and a Bootstrap-based frontend. It allows users to **create, view, update, and delete travel destinations**, upload images, and add map links to each location.
 
 This app can be used to maintain a personal travel log, power a small-scale tourism site, or serve as a portfolio project for Django and REST API development. ✈️🧳
 
