@@ -27,7 +27,6 @@ This app can be used to maintain a personal travel log, power a small-scale tour
 
 ### Frontend
 - 🧱 HTML5
-- 🎨 CSS3
 - 🅱️ Bootstrap 5
 
 ### Database
